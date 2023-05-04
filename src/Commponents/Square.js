@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
-const Square = ({value}) => {
+const Square = () => {
     const [click , setClick]= useState(null);
     const handleClick= () => {
-        console.log('Clicked');
+        setClick('X')
     }
     return (
     
-            <button className='square' onClick={handleClick}>{value}</button>
+            <button className='square' onClick={handleClick}>{click}</button>
      );
 }
  
