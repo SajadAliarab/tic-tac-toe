@@ -15,10 +15,8 @@ const Board = () => {
             [0,4,8],
             [2,4,8]
         ];
-        console.log(square);
         for(let i =0; i<lines.length; i++){
             const [a,b,c]=lines[i];
-            console.log(square[a,b,c]);
             if(square[a] && square[a]===square[b]&&square[b]===square[c]){
                 return square[c];
             }
